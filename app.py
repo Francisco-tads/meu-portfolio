@@ -55,5 +55,5 @@ def send():
 
     return redirect('/')
 
-if __name__ == '_main_':
+if __name__ == '_master_':
     app.run(debug=True)
