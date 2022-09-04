@@ -5,7 +5,7 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = 'francisco'
+app.secret_key = 'iczaknktxsjdwyrv'
 
 mail_settings = {
     "MAIL_SERVER": 'smtp.gmail.com',
@@ -42,7 +42,7 @@ def send():
     msg = Message(
         subject = f'{formContato.nome} te enviou uma mensagem no portfólio',
         sender = app.config.get("MAIL_USERNAME"),
-        recipients= ['francisco.vieiratads@gmail.com',
+        recipients= ['francisco.contatoportfolio@gmail.com',
                     app.config.get("MAIL_USERNAME")],
         body = f'''
         
