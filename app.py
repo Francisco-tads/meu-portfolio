@@ -34,26 +34,27 @@ def index():
 @app.route('/send', methods=['GET', 'POST'])
 def send():
     if request.method == 'POST':
-       formContato = contato(
-        request.form["nome"],
-        request.form["email"],
-        request.form["mensagem"]
-    )
-    msg = Message(
-        subject = f'{formContato.nome} te enviou uma mensagem no portfólio',
-        sender = app.config.get("MAIL_USERNAME"),
-        recipients= ['francisco.contatoportfolio@gmail.com',
+        formContato = contato(
+            request.form["nome"],
+            request.form["email"],
+            request.form["mensagem"]
+        )
+
+        msg = Message(
+            subject = f'{formContato.nome} te enviou uma mensagem no portfólio',
+            sender = app.config.get("MAIL_USERNAME"),
+            recipients= ['francisco.vieiratads@gmail.com',
                     app.config.get("MAIL_USERNAME")],
-        body = f'''
+            body = f'''
         
-        {formContato.nome} com o email {formContato.email}, te enviou a seguinte mensagem:
+            {formContato.nome} com o email {formContato.email}, te enviou a seguinte mensagem:
 
-        {formContato.mensagem}
+            {formContato.mensagem}
 
-        '''
-    )
-    mail.send(msg)
-    flash('Mensagem enviada com sucesso!')
+            '''
+        )
+        mail.send(msg)
+        flash('Mensagem enviada com sucesso!')
 
     return redirect('/')
 
