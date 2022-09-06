@@ -554,18 +554,18 @@
 
                 <div class="col-12">
                   <label for="mensagem" class="form-label">Mensagem:</label>
-                  <textarea type="text" class="form-control" id="mensagem" name='mensagem' rows="10"
+                  <textarea type="text" class="form-control" id="mensagem" name='msg' rows="10"
                     placeholder="Digite sua mensagem" required></textarea>
-                </div>                
+                </div>                  
 
-                  <button type="submit" class="btn btn-primary">Enviar
-                    mensagem</button>
-                <div class="col-12 d-flex justify-content-center mt-4">    
-                  <button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
-                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                    Enviando...
-                  </button>
+                <div class="col-12 d-flex justify-content-center mt-4">
+                  <button id='btn-enviar' type="submit" class="btn btn-primary">Enviar
+                    mensagem</button>                  
                 </div>
+                <button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Enviando...
+                </button>
                 </div>
 
               </form>
