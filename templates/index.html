@@ -406,7 +406,7 @@
                       <h5 class="card-title">Starbucks coffee</h5>
                       <p class="card-text">Projeto com HTML, CSS E JavaScript</p>
                       <div class="d-flex justify-content-center">
-                        <a href="https://meu-portfolio.dev.br/" target="_blank" class="btn btn-outline-primary"><i
+                        <a href="https://starbucks-coffe.netlify.app/" target="_blank" class="btn btn-outline-primary"><i
                             class="bi 
                            bi-link-45deg"></i></a>
                       </div>
@@ -555,7 +555,8 @@
                   <button id='btn-enviar' type="submit" class="btn btn-primary">Enviar
                     mensagem</button>
                   <input type="hidden" name="_captcha" value="false">
-                  <input type="hidden" name="_next" value="https://francisco-tads.herokuapp.com">                  
+                  <input type="hidden" name="_next" value="https://francisco-tads.herokuapp.com/thanks.html">                  
+                                    
                   <button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                     Enviando...
@@ -571,6 +572,16 @@
 
     </section>
 
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill"></i> {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
   </main>
 
   <footer id="footer">
