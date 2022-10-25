@@ -535,8 +535,6 @@
             <div class="card p-5 h-100 shadow-0" data-anime="left">
 
               <form class="row g-3" action="https://formsubmit.co/francisco.contatoportfolio@gmail.com" method="POST">
-                <input type="hidden" name="_next" value="https://francisco-tads.herokuapp.com/form-submit/sucesso.html">
-                <input type="hidden" name="_captcha" value="false">
                 <div class="col-md-6">
                   <label for="name" class="form-label">Nome:</label>
                   <input type="text" class="form-control" id="name" name="Nome" placeholder='Digite seu nome' required>
@@ -553,14 +551,13 @@
                     placeholder="Digite sua mensagem" required></textarea>
                 </div>
 
-
                 <div class="col-12 d-flex justify-content-center mt-4">
                   <button id='btn-enviar' type="submit" class="btn btn-primary">Enviar
                     mensagem</button>
-
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_next" value="https://francisco-tads.herokuapp.com/sucesso.html">
                   <button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
-                    <span class="spinner-border spinner-border-sm" role="status"
-                     aria-hidden="true"></span>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                     Enviando...
                   </button>
                 </div>
@@ -573,7 +570,7 @@
       </div>
 
     </section>
-    
+
   </main>
 
   <footer id="footer">
