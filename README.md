@@ -1,6 +1,5 @@
 # meu-portfolio
-
- meu-portfolio 
+  
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Francisco-tads/curriculo-pdf/blob/master/LICENCE) 
 
 # Sobre o projeto
