@@ -4,7 +4,7 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Francisco-tads/curriculo-pdf/blob/master/LICENCE) 
 
 # Sobre o projeto
-
+https://meu-portfolio.dev.br/
 
 
 Meu portfólio é uma aplicação Web e mobile, um site que está hospedado no heroku e toda sua estrutura de código está no  Github. Meu portfólio é site principal, onde ficará de fácil acesso todos meus projetos. [Meu-Portfólio]().
@@ -29,7 +29,7 @@ Meu portfólio é uma aplicação Web e mobile, um site que está hospedado no h
 - BOOTSTRAP
 ## Implantação em produção
 - Back end: 
-- Front end web: 
+- Front end web: heroku
 - Banco de dados: Postgresql
 
 # Autor
